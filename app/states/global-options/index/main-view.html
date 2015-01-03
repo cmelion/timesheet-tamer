@@ -1,0 +1,21 @@
+<div class="pure-container pure-container-component"
+     data-effect="pure-effect-push">
+  <input type="checkbox"
+         id="pure-toggle-right"
+         class="pure-toggle"
+         data-toggle="right"
+         ng-model="expanded"
+         ng-change="logState()"/>
+  <label class="pure-toggle-label"
+         for="pure-toggle-right"
+         data-toggle-label="right">
+    <span class="pure-toggle-icon"></span>
+  </label>
+  <navbar-component></navbar-component>
+  <div class="pure-pusher-container">
+    <div class="pure-pusher view-change-animation" ui-view></div>
+  </div>
+  <label class="pure-overlay"
+         for="pure-toggle-right"
+         data-overlay="right"></label>
+</div>

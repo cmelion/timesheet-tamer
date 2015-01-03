@@ -1,0 +1,47 @@
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-image: url("../assets/images/bg-01.jpg");
+  background-repeat: repeat;
+}
+
+#root
+{
+  position: relative; //View will be positioned absolute during animations
+  margin-top: 15px;
+  > div[ng-view], > div[ui-view], .pure-pusher
+  {
+    > .container
+    {
+      max-width: none;
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+}
+
+.no-left-margin
+{
+  margin-left: 0 !important;
+}
+
+[ng-click]
+{
+  cursor: pointer;
+}
+
+.avatar-frame{border: 2px solid #fff;}
+.avatar-frame,.avatar-frame img{
+  width: 80px;
+  height: 80px;
+  -webkit-border-radius: 40px; /* Saf3+, Chrome */
+  border-radius: 40px; /* Opera 10.5, IE 9 */
+  /*-moz-border-radius: 30px;  Disabled for FF1+ */
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
